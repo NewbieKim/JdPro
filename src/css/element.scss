@@ -1,0 +1,36 @@
+@import "./layout.scss";
+//定义按钮的模块的样式
+@mixin btn($size:14px, $color:#fff, $bgcolor:#F04752, $padding:5px, $radius:5px) {
+    padding: $padding;
+    background-color: $bgcolor;
+    border-radius: $radius;
+    border: 1px solid $bgcolor;
+    /* font-size: $size; */
+    text-align: center;
+    /* line-height: 1; */
+    display: inline-block;
+    color: $color;
+}
+
+//$direction:column 布局的方向
+@mixin list($direction:column) {
+    @include flex($direction); //通过继承的方式来获得layout里的样式
+}
+
+@mixin panel($bgcolor:#fff, $padding:0, $magin:5px, $height:60px, $txtpadding:0 12px, $color:rgb(71, 130, 240)) {
+    background-color: $bgcolor;
+    padding: $padding;
+    margin: 20px 0;
+    >h4 {
+        margin: $magin;
+        height: $height;
+        line-height: 48px;
+        padding: $txtpadding;
+        text-overflow: ellipsis; //文本过长加...
+        white-space: nowrap; //截止换行
+        overflow: hidden;
+        text-align: center;
+        color: $color;
+        font-size: 36px;
+    }
+}

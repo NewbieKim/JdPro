@@ -1,0 +1,7 @@
+//这里写布局页的样式
+@charset "UTF-8";
+@mixin flex($directtion:column, $inline:block) {
+    display: if($inline==block, flex, inline-flex);
+    flex-direction: $directtion;
+    flex-wrap: wrap;
+}
