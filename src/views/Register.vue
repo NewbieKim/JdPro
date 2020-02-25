@@ -1,9 +1,10 @@
 <template>
   <div>
+      <img class="headimg" src="//img11.360buyimg.com/da/jfs/t16363/164/2298198848/33213/870500f1/5aa68632Nd7790d0c.png" alt="">
       <cube-form
          :model="model"
          :schema="schema"
-         @submit="submitHandler">
+         @submit="submitHandler" class="register">
      </cube-form>
 
   </div>
@@ -82,3 +83,13 @@ export default {
     }
 }
 </script>
+<style lang="scss" scoped>
+    .headimg{
+        height: 240px;
+        width: 100%;
+    }
+    .register{
+        padding: 20px 20px;
+        font-size: 20px;
+    }
+</style>

@@ -81,7 +81,7 @@ export default {
                      top: 50%;
                      right: 0;
                      margin-top: -68px;
-                     border-right: 1px solid red;             
+                     border-right: 2px solid red;             
                  }
                  &:nth-child(2n){  //偶数元素不展示
                      &:after{
@@ -90,13 +90,13 @@ export default {
                  }
                  //padding: 34px 16px;
                  dt{
-                    font-size: 16px;
+                    font-size: 18px;
                     line-height: 42px;
                     color: #333;
                     span{
                         font-size: 22px;
                         color: #ff5155;
-                        border:1px solid #ff5155;
+                        border:5px solid #ff5155;
                         padding: 0 8px;
                         vertical-align: 1px;
                         margin-left: 2px;
@@ -105,7 +105,7 @@ export default {
                  dd{
                      &:nth-child(2){   // 第二个dd
                         font-weight: 700;
-                        font-size: 24px;
+                        font-size: 36px;
                         height: 58px;
                         line-height: 58px;
                         color: #FF5155;

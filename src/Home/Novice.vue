@@ -71,7 +71,7 @@ export default {
             }
             p{
                 margin: 6px;
-                font-size: 24px;
+                font-size: 36px;
             }
             ul{
                 width: 100%;
@@ -81,7 +81,7 @@ export default {
                     list-style: none;
                     height: 144px;
                     width:100%;
-                    padding:1px 28px;
+                    padding:40px 28px;
                     box-sizing: border-box;
                     &:first-child{
                         border-bottom: 1px solid #ddd;

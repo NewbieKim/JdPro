@@ -1,9 +1,10 @@
 <template>
   <div>
+      <img class="headimg" src="//img11.360buyimg.com/da/jfs/t16363/164/2298198848/33213/870500f1/5aa68632Nd7790d0c.png" alt="">
       <cube-form
          :model="model"
          :schema="schema"
-         @submit="submitHandler">
+         @submit="submitHandler" class="login">
      </cube-form>
   </div>
 </template>
@@ -82,7 +83,13 @@ export default {
                     this.$store.commit('settoken',result.data.token)
                     window.localStorage.setItem('token',result.data.token)
                     //登录成功后跳转到首页
-                    this.$router.replace({path:'/index'})
+                    /* this.$router.replace({path:'/index'}) */
+                    //判断路由是否带参，带参就去到重定向参数地址，否则就去首页
+                    if(this.$route.query.redirect){
+                         this.$router.replace({path:this.$route.query.redirect})
+                    }else{
+                         this.$router.replace({path:'/botnav/index'})
+                    }
                 }else{
                     alert(result.data.message)
                 }
@@ -94,6 +101,13 @@ export default {
     }
 }
 </script>
-<style lang="stylus" scoped>
-    
+<style lang="scss" scoped>
+    .headimg{
+        height: 240px;
+        width: 100%;
+    }
+    .login{
+        padding: 20px 20px;
+        font-size: 20px;
+    }
 </style>
