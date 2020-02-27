@@ -8,8 +8,8 @@
 5.进行项目的性能及体验优化(优化首屏加载、路由跳转动画效果、购物车动画实现、路由懒加载)；
 
 项目效果图片：
-![Alt text](https://github.com/NewbieKim/JdPro/raw/master/staic/jdpro1)
-![Alt text](https://github.com/NewbieKim/JdPro/raw/master/staic/jdpro2)
-![Alt text](https://github.com/NewbieKim/JdPro/raw/master/staic/jdpro3)
-![Alt text](https://github.com/NewbieKim/JdPro/raw/master/staic/jdpro4)
-![Alt text](https://github.com/NewbieKim/JdPro/raw/master/staic/jdpro5)
+![Alt text](https://github.com/NewbieKim/JdPro/raw/master/staic/jdpro1.png)
+![Alt text](https://github.com/NewbieKim/JdPro/raw/master/staic/jdpro2.png)
+![Alt text](https://github.com/NewbieKim/JdPro/raw/master/staic/jdpro3.png)
+![Alt text](https://github.com/NewbieKim/JdPro/raw/master/staic/jdpro4.png)
+![Alt text](https://github.com/NewbieKim/JdPro/raw/master/staic/jdpro5.png)
